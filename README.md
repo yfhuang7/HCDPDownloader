@@ -7,7 +7,7 @@ HCDPDownloader is a R package for downloading the atmospheric data in Hawaiʻi t
 `get_hcdp_rainfall()`: download monthly or daily rainfall data for all stations in Hawaiʻi.
 
 # Installation
-devtools::install_github("yfhuang7/HCDPDownloader")
+`devtools::install_github("yfhuang7/HCDPDownloader")`
 
 # Licence
 MIT 
