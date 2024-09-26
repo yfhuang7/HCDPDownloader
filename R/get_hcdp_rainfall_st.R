@@ -1,10 +1,13 @@
 #' Download HCDP Rainfall Data (Station)
 #'
-#' This function downloads HCDP rainfall data for a specified year, month, and optional day.
+#' This function downloads HCDP monthly/daily rainfall data for a specified year/month.
+#' Currently function only can apply on one file at a time.
 #'
 #' @param year Year of the data (e.g., 2020).
 #' @param month Month of the data (e.g., "03" for March) # if provided, download daily data for the month
-#' @param fill Optional. Used for DAILY station data, such as "partial" or "raw". Defaults to "partial". raw: Unfilled data that has not undergone QA/QC. partial: Partially filled data that has undergone QA/QC and had statistical methods applied to it to estimate some missing values
+#' @param fill Optional. Used for DAILY station data, such as "partial" or "raw". 
+#'              Defaults to "partial". raw: Unfilled data that has not undergone QA/QC. 
+#'              partial: Partially filled data that has undergone QA/QC and had statistical methods applied to it to estimate some missing values
 #' @param period The period of data (default: "month"). Use "day" for daily data.
 #' @param extent The geographical extent of the data (default: "statewide").
 #'
@@ -16,6 +19,9 @@
 #' # Download monthly rainfall for 2020 to the outdir
 #' get_hcdp_rainfall(year = 2020, outdir="~/Downloads")
 #'
+#' 20240925 Yu-Fen Huang
+#' 
+
 get_hcdp_rainfall <- function(year, month = NULL, fill = "partial", period = "month", extent = "statewide", outdir = "~/Downloads") {
 
   # Base URL for HCDP station data
