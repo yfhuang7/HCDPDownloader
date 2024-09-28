@@ -11,7 +11,7 @@
 #' @param token Your personal access token for authentication.
 #' @param output_path Path to the folder where the GeoTIFF file will be saved (default: current working directory).
 #'
-#' @return A message indicating the success or failure of the file download.
+#' @return A message indicating the success or failure of the file download. Geotiff file saved in outdir.
 #' @export
 #' @examples
 #' \dontrun{
