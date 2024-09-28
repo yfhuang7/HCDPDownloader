@@ -18,7 +18,7 @@
 #' @export
 #' @examples
 #' \dontrun{
-#'   download_station_timeseries(
+#'   get_timeseries_st(
 #'     station_id = "1094.2",
 #'     datatype = "rainfall",
 #'     period = "month",

@@ -49,7 +49,7 @@ This function queries the HCDP API to retrieve station timeseries data (e.g., ra
 }
 \examples{
 \dontrun{
-  download_station_timeseries(
+  get_timeseries_st(
     station_id = "1094.2",
     datatype = "rainfall",
     period = "month",

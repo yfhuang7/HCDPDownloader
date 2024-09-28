@@ -35,9 +35,9 @@ Currently function only can apply on one file at a time.
 }
 \examples{
 # Download daily rainfall for March 2020 to the outdir
-get_hcdp_rainfall(year = 2020, month = 8, outdir="~/Downloads")
+get_file(year = 2020, month = 8, outdir="~/Downloads")
 # Download monthly rainfall for 2020 to the outdir
-get_hcdp_rainfall(year = 2020, outdir="~/Downloads")
+get_file(year = 2020, outdir="~/Downloads")
 
 20240925 Yu-Fen Huang
 

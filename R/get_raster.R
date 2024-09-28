@@ -15,14 +15,14 @@
 #' @export
 #' @examples
 #' \dontrun{
-#'   download_raster_data(
+#'   get_raster(
 #'     date = "2022-02",
 #'     extent = "bi",
 #'     datatype = "rainfall",
 #'     production = "new",
 #'     period = "month",
 #'     token = "YOUR_ACCESS_TOKEN",
-#'     output_path = "C:/Downloads"
+#'     output_path = "~/Downloads"
 #'   )
 #' }
 get_raster <- function(date, extent, datatype, production = NULL, period = NULL, returnEmptyNotFound = FALSE, token, output_path = getwd()) {
