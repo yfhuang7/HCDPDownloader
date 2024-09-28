@@ -6,8 +6,9 @@ HCDPDownloader is a R package for downloading the climate data (e.g., rainfall a
 # Available function
 `get_file()`: download monthly or daily rainfall data as original file for all stations in Hawaiʻi.
 
-API TOKEN needed (apply the token from [here](https://www.hawaii.edu/climate-data-portal/hcdp-hawaii-mesonet-api/))
-`get_timeseries()`: download monthly or daily rainfall or temperature time series data.
+API TOKEN needed (apply the token from [here](https://www.hawaii.edu/climate-data-portal/hcdp-hawaii-mesonet-api/))  
+
+`get_timeseries()`: download monthly or daily rainfall or temperature time series data.  
 `get_raster()`: download rainfall raster file.
 
 # Installation
