@@ -13,7 +13,7 @@ get_timeseries_raster(
   col = NULL,
   index = NULL,
   lat = NULL,
-  lon = NULL,
+  lng = NULL,
   production = NULL,
   period = NULL,
   token
@@ -36,7 +36,7 @@ get_timeseries_raster(
 
 \item{lat}{Optional. Latitude of the location to produce a timeseries.}
 
-\item{lon}{Optional. Longitude of the location to produce a timeseries.}
+\item{lng}{Optional. Longitude of the location to produce a timeseries.}
 
 \item{production}{Optional. Specifies data production type if required (e.g., "new").}
 
@@ -59,7 +59,7 @@ for a specified location and date range.
     datatype = "rainfall",
     extent = "statewide",
     lat = 21.539576,
-    lon = -157.965820,
+    lng = -157.965820,
     production = "new",
     period = "month",
     token = "YOUR_ACCESS_TOKEN"

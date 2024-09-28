@@ -11,7 +11,7 @@
 #' @param col Optional. The column index for the grid cell to produce a timeseries.
 #' @param index Optional. The 1D index of the value to produce a timeseries (width * row + col).
 #' @param lat Optional. Latitude of the location to produce a timeseries.
-#' @param lon Optional. Longitude of the location to produce a timeseries.
+#' @param lng Optional. Longitude of the location to produce a timeseries.
 #' @param production Optional. Specifies data production type if required (e.g., "new").
 #' @param period Optional. Specifies the period of data (e.g., "month", "day").
 #' @param token Your personal access token for authentication.
@@ -26,13 +26,13 @@
 #'     datatype = "rainfall",
 #'     extent = "statewide",
 #'     lat = 21.539576,
-#'     lon = -157.965820,
+#'     lng = -157.965820,
 #'     production = "new",
 #'     period = "month",
 #'     token = "YOUR_ACCESS_TOKEN"
 #'   )
 #' }
-get_timeseries_raster <- function(start, end, datatype, extent, row = NULL, col = NULL, index = NULL, lat = NULL, lon = NULL, production = NULL, period = NULL, token) {
+get_timeseries_raster <- function(start, end, datatype, extent, row = NULL, col = NULL, index = NULL, lat = NULL, lng = NULL, production = NULL, period = NULL, token) {
   # Load required libraries
   if (!requireNamespace("httr", quietly = TRUE)) install.packages("httr")
   if (!requireNamespace("jsonlite", quietly = TRUE)) install.packages("jsonlite")
