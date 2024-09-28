@@ -22,8 +22,12 @@
 #' 20240925 Yu-Fen Huang
 #' 
 
-get_hcdp_rainfall <- function(year, month = NULL, fill = "partial", period = "month", extent = "statewide", outdir = "~/Downloads") {
+get_file <- function(year, month = NULL, fill = "partial", period = "month", extent = "statewide", outdir = "~/Downloads") {
 
+  # Load required libraries
+  if (!requireNamespace("httr", quietly = TRUE)) install.packages("httr")
+  library(httr)
+  
   # Base URL for HCDP station data
   base_url <- "https://ikeauth.its.hawaii.edu/files/v2/download/public/system/ikewai-annotated-data/HCDP/production/rainfall/new"
 
