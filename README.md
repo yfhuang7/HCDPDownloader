@@ -17,6 +17,9 @@ HCDPDownloader is a R package for downloading the climate data (e.g., rainfall a
 # Installation
 `devtools::install_github("yfhuang7/HCDPDownloader")`
 
+# Citation
+Depends on the data you download, please look for the corresponding data citation in this [page](https://www.hawaii.edu/climate-data-portal/how-to-cite-3/)
+
 # Licence
 MIT 
 
